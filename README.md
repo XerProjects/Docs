@@ -21,3 +21,7 @@ For branching we use the GitFlow (see http://nvie.com/posts/a-successful-git-bra
   - created when the release is almost finished and only testing is done. Only bug fixes are allowed on this branch. After completion it it merged into master and dev branch and deleted after master.
 - hotfix-[version]
   - when critical bugfixing must be done on a release that is shipped. Should be merged into master and deleted after merging.
+
+For versioning we use GitVersion (see http://gitversion.readthedocs.io/en/latest/). Based on the above branches GitVersion determines the version number. 
+
+NuGet packages for all branches are published to our myget feed (https://www.myget.org/F/xerproject/api/v3/index.json). Tags are published to the official NuGet feeds. 
