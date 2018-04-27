@@ -17,9 +17,9 @@ For branching we use the GitFlow (see http://nvie.com/posts/a-successful-git-bra
   - after the feature branch is completed it is merged through a pull request in the dev branch
 - master
   - used for completed releases. Must be merged through a release branch. Release are created on the master branch commits
-- release/[version]
-  - created when the release is almost finished and only testing is done. Only bug fixes are allowed on this branch. After completion it it merged into master and dev branch and deleted after master.
-- hotfix-[version]
+- release-[version] or release/[version]
+  - created when the release is almost finished and only testing is done. Only bug fixes are allowed on this branch. After completion it is merged into master and dev branch and deleted after merging.
+- hotfix-[version] or hotfix/[version]
   - when critical bugfixing must be done on a release that is shipped. Should be merged into master and deleted after merging.
 
 For versioning we use GitVersion (see http://gitversion.readthedocs.io/en/latest/). Based on the above branches GitVersion determines the version number. 
